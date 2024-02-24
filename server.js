@@ -11,21 +11,21 @@ const squadData = await fetchJson('https://fdnd.directus.app/items/squad')
 const app = express()
 
 // Stel ejs in als template engine
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs') 
 
 // Stel de map met ejs templates in
-app.set('views', './views')
+app.set('views', './views') // verwijzing naar paginas
 
-// Gebruik de map 'public' voor statische resources, zoals stylesheets, afbeeldingen en client-side JavaScript
-app.use(express.static('public'))
+// Gebruik de map 'public' voor statische resources
+app.use(express.static('public')) // verwijzing naar bv styling, images
 
 // Maak een GET route voor de index
-app.get('/', function (request, response) {
+app.get('/', function (request, response) { // Zorg ervoor dat je de informatie terug krijgt
   // Haal alle personen uit de WHOIS API op
   fetchJson('https://fdnd.directus.app/items/person').then((apiData) => {
     // apiData bevat gegevens van alle personen uit alle squads
     // Je zou dat hier kunnen filteren, sorteren, of zelfs aanpassen, voordat je het doorgeeft aan de view
-
+      
     // Render index.ejs uit de views map en geef de opgehaalde data mee als variabele, genaamd persons
     response.render('index', {persons: apiData.data, squads: squadData.data})
   })

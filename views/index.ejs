@@ -1,10 +1,35 @@
 <%- include('partials/head') %>
 
+ <!-- navbar -->
+ <nav class="nav">
+     <ul class="menu">
+         <li><a href="/?squad_id=3">Squad D </a></li>
+         <li><a href="/?squad_id=4">Squad E </a> </li>
+         <li><a href="/?squad_id=5">Squad F </a></li>
+     </ul>
+ </nav>
+
+<!-- section -->
+<section class="squad-page">
+  <h1>Squadpage</h1>
+</section>
+
 <h2>Students</h2>
-<ul>
+<div class="person-cards">
   <% persons.forEach(person => { %>
-    <li><a href="/detail/<%= person.id %>"><%= person.name %></a>, squad_id <%= person.squad_id %></li>
+
+      <section class="person-item" >
+        <!-- Toon de avatar van de member -->
+      <% if (person.avatar) { %>
+        <img src="<%= person.avatar %>" alt="Avatar <%= person.name %>" />
+        <!-- Als de member geen avatar heeft -->
+        <% }else{ %>
+          <img src="https://icons.veryicon.com/png/o/miscellaneous/xdh-font-graphics-library/anonymous-user.png" alt="Unknown Avatar"/>
+        <% } %>
+       <a href="/detail/<%= person.id %>"><%= person.name %></a>, squad_id <%= person.squad_id %>
+      </section>
+
   <% }) %>
-</ul>
+</div>
 
 <%- include('partials/foot') %>
