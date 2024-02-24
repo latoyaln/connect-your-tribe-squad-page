@@ -3,10 +3,12 @@
  <!-- navbar -->
  <nav class="nav">
      <ul class="menu">
-         <li><a href="/?squad_id=3">Squad D </a></li>
-         <li><a href="/?squad_id=4">Squad E </a> </li>
-         <li><a href="/?squad_id=5">Squad F </a></li>
-     </ul>
+      <% squads.forEach((squad) => { %>
+      <li>
+          <a href="#"> Squad <%= squad.name %></a>
+      </li>
+      <% }) %>
+  </ul>
  </nav>
 
 <!-- section -->

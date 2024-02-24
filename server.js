@@ -39,6 +39,7 @@ app.post('/', function (request, response) {
 
 // Maak een GET route voor een detailpagina met een request parameter id
 app.get('/detail/:id', function (request, response) {
+
   // Gebruik de request parameter id en haal de juiste persoon uit de WHOIS API op
   fetchJson('https://fdnd.directus.app/items/person/' + request.params.id).then((apiData) => {
     // Render detail.ejs uit de views map en geef de opgehaalde data mee als variable, genaamd person
