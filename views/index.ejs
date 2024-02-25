@@ -2,14 +2,16 @@
 
  <!-- navbar -->
  <nav class="nav">
-     <ul class="menu">
-      <% squads.forEach((squad) => { %>
-      <li>
-          <a href="#"> Squad <%= squad.name %></a>
-      </li>
-      <% }) %>
+  <ul class="menu">
+    <% squads.forEach((squad) => { %>
+      <% if (squad.name !== '2A' && squad.name !== '2B') { %>
+        <li>
+          <a href="/?squadId=<%= squad.id %>"> Squad <%= squad.name %></a>
+        </li>
+      <% } %>
+    <% }) %>
   </ul>
- </nav>
+</nav>
 
 <!-- section -->
 <section class="squad-page">
@@ -28,7 +30,8 @@
         <% }else{ %>
           <img src="https://icons.veryicon.com/png/o/miscellaneous/xdh-font-graphics-library/anonymous-user.png" alt="Unknown Avatar"/>
         <% } %>
-       <a href="/detail/<%= person.id %>"><%= person.name %></a>, squad_id <%= person.squad_id %>
+      <p><%= person.name %></a>, squad_id <%= person.squad_id %></p>
+       <a href="/detail/<%= person.id %>" class="button">Meer Info</a>
       </section>
 
   <% }) %>
