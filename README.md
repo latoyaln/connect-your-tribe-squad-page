@@ -21,15 +21,32 @@ Express is een node web framework. Je kan dit gebruiken om handlers voor request
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Deze site is gemaakt door Node EJS en Express.
 
 ## Installatie
-<!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
+* Node installatie - Via [Nodejs.org](https://nodejs.org/en/download/) heb ik eerst Node js gedownload.
+* NPM installatie
+
+1. Om in de repository te werken en aanpassingen te maken moet je node.js downloaden.
+2. Clone of download deze respository.
+3. Open hem in je code-editor (Visal Studio Code).
+4. Open de terminal en typ npm install.
+5. Daarna kun je door middel van npm start een localhost krijgen met een link waar je de live site kunt bekijken.
+6. Het live zetten van je project kan met behulp van cyclic.
 
 ## Gebruik
+Je kunt filteren op de 3 squads.
 
 ## Bronnen
-
+Dit zijn de bronnen die ik voor dit project heb gebruikt:
+* [Codepen](https://codepen.io/nxworld/pen/ZYNOBZ) (Hover over de images)
+* [YouTube](https://www.youtube.com/watch?v=3yfswsnD2sw&t=519s&ab_channel=KevinPowell) (Voor de horizontal media scroller)
+* [Google Fonts](https://fonts.google.com/) (Lettertypes)
+* [Whois](whois.fdnd.nl) (API informatie)
+* [Cyclic](cyclic.sh) (Live link)
+* [Node js](https://nodejs.org/en/download/) (Voor het installeren van Node js)
+* [Github forks](https://github.com/fdnd-task/connect-your-tribe-squad-page/network/members) (Inspiratie)
+  
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
