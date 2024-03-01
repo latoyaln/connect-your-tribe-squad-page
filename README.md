@@ -1,7 +1,7 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Squad Page
 
 ## Inhoudsopgave
 
@@ -13,7 +13,10 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+Wij hebben een website voor de squad met Node en data uit de whois.fdnd.nl API gemaakt.
+Node is een open source Javascript omgeving voor het bouwen van snelle serverside- en netwerktoepassingen. Node maakt het mogelijk om JS te gebruiken buiten de browser. Je kan JS gebruiken voor zowel frontend als backend.
+EJS is een sjabloonengine die wordt gebruikt door Node.js. Het helpt bij het maken van een html sjabloon.
+Express is een node web framework. Je kan dit gebruiken om handlers voor requests 
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
