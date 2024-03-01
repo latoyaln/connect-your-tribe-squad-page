@@ -16,7 +16,7 @@ Squad Page
 Wij hebben een website voor de squad met Node en data uit de whois.fdnd.nl API gemaakt.
 Node is een open source Javascript omgeving voor het bouwen van snelle serverside- en netwerktoepassingen. Node maakt het mogelijk om JS te gebruiken buiten de browser. Je kan JS gebruiken voor zowel frontend als backend.
 EJS is een sjabloonengine die wordt gebruikt door Node.js. Het helpt bij het maken van een html sjabloon.
-Express is een node web framework. Je kan dit gebruiken om handlers voor requests 
+Express is een node web framework. Je kan dit gebruiken voor routing, middleware, sjablonen, foutafhandelingen. Je kan er RESTful Api's meemaken.
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
